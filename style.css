@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smothing: antialised;
+    -moz-osx-font-smoothing: grayscale;
+    /*outline: 1px solid limegreen;*/
+}
+
+:root {
+    font-size: 62.5%;
+    --cor1: #ED07B7;
+    --cor2: #070212;
+    --cor3: #3201E0;
+    --cor4: #023CFA;
+    --cor5: #07A1ED;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: poppins, sans-serif;
+    height: 100vh;
+    background: linear-gradient(to bottom,
+    var(--cor2) 5%,
+    var(--cor3),
+    var(--cor2) 98%)no-repeat;
+}
+
+header {
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 5rem;
+    color: rgba(255, 255, 255, 0.753)
+
+}
+
+#logo > img {
+    height: 8rem;
+}
+
+.main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 100.5rem;
+}
+
+.menulink {
+    min-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+    padding: 3rem;
+    margin-right: 5rem;
+    gap: 3rem;
+}
+
+.menulink > a {
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.searchbar {
+    margin-right: 2rem;
+}
+
+.searchbar > button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    line-height: 1rem;
+    font-weight: 600;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+}
+
+.searchbtn, .advancedbtn{
+    cursor: pointer;
+    
+}
+
+.flex {
+    display: flex;
+    min-width: 100.5rem;
+    height: 3rem;
+    justify-content: space-between;
+}
+.subar {
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, rgba(90, 16, 240, 0.164), var(--cor2)35%,  rgba(27, 2, 77, 0.185), var(--cor2) 62%);
+    box-shadow: 6px 6px 16px 7px;
+}
+
+.findus {
+    width: 25%;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.findus > a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.loginin {
+    display: flex;
+    width: 23%;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.loginin > button {
+    background-color: transparent;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 14px;
+    border: 1px solid white;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
