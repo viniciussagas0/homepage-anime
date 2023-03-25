@@ -11,7 +11,7 @@
     font-size: 62.5%;
     --cor1: #ED07B7;
     --cor2: #070212;
-    --cor3: #3201E0;
+    --cor3: #080025;
     --cor4: #023CFA;
     --cor5: #07A1ED;
 }
@@ -39,8 +39,10 @@ h1 {
 
 }
 
-#logo > img {
+#logo {
     height: 8rem;
+    border-radius: 1rem;
+    padding: 1rem;
 }
 
 .main-menu {
@@ -98,8 +100,8 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(145deg, rgba(90, 16, 240, 0.164), var(--cor2)35%,  rgba(27, 2, 77, 0.185), var(--cor2) 62%);
-    box-shadow: 6px 6px 16px 7px;
+    background: linear-gradient(145deg, #040C30, var(--cor2)35%,  #040C30, var(--cor2) 62%, #040C30 );
+    box-shadow: 1px 1px 18px rgb(95, 210, 255);
 }
 
 .findus {
@@ -131,7 +133,34 @@ h1 {
     font-weight: bold;
     border-radius: 14px;
     border: 1px solid white;
-    padding: 1rem;
+    padding: 0.8rem;
     text-align: center;
     cursor: pointer;
+} 
+
+.menulink > a {
+    width: max-content;
+    position: relative;
 }
+
+.menulink > a::after {
+    content: "";
+    position:absolute;
+    bottom: -10px;
+    height: 2px;
+    width: 90%;
+    left: 6px;
+    background-color: skyblue;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scale(0);
+}
+
+.menulink > a:hover::after {
+    transform: scale(1);
+}
+
+.menulink > a:hover {
+    color: skyblue;
+}
+
