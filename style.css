@@ -43,6 +43,7 @@ h1 {
     height: 8rem;
     border-radius: 1rem;
     padding: 1rem;
+    filter: drop-shadow(1px 1px 7px rgb(44, 82, 100));
 }
 
 .main-menu {
@@ -164,3 +165,49 @@ h1 {
     color: skyblue;
 }
 
+.socialmed:hover {
+    color: skyblue;
+    text-shadow: 0px 0px 50px blue,
+                 0px 0px 75px blue,
+                 0px 0px 90px blue,
+                 0px 0px 110px blue;
+    animation: animate 3s linear infinite;
+    transition: 30ms ;
+}
+
+@keyframes animate{
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.highlights {
+    width: 750PX;
+    height: 55rem;
+    margin: 4rem auto;
+    border-radius: 2rem;
+    border: .1rem solid gray;
+    padding: 3rem 2rem;
+}
+
+.highlights > h1 {
+    max-width: 600px;
+    margin: auto;
+}
+
+p {
+    color: white;
+}
+
+.loginin button:hover {
+    color: skyblue;
+    background-color: #c0bec510;
+    border: 1px solid skyblue;
+}
+
+.searchbar button:hover{
+    color: skyblue;
+}
