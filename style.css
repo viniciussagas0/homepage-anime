@@ -43,7 +43,7 @@ h1 {
     height: 8rem;
     border-radius: 1rem;
     padding: 1rem;
-    filter: drop-shadow(1px 1px 7px rgb(44, 82, 100));
+    animation: shadow 2s linear infinite;
 }
 
 .main-menu {
@@ -211,3 +211,15 @@ p {
 .searchbar button:hover{
     color: skyblue;
 }
+
+@keyframes shadow {
+    0% {
+        filter: drop-shadow(0 0 0px rgba(135, 207, 235, 0.397));
+    }
+    50% {
+        filter: drop-shadow(0 0 15px rgba(135, 207, 235, 0.397))
+    }
+    100% {
+        filter: drop-shadow(0 0 0px rgba(135, 207, 235, 0.397))
+    }
+  }
