@@ -27,9 +27,15 @@ body {
 }
 
 header {
+    width: 100%;
     height: 12rem;
     display: flex;
     justify-content: center;
+}
+
+.manga video {
+    height: 75%;
+    box-shadow: 4px 4px 8px 0px black;
 }
 
 h1 {
@@ -39,18 +45,21 @@ h1 {
 
 }
 
+
 #logo {
     height: 8rem;
+    margin-right: 20px;
     border-radius: 1rem;
     padding: 1rem;
     animation: shadow 2s linear infinite;
 }
 
 .main-menu {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 100.5rem;
+    max-width: 100.5rem;
 }
 
 .menulink {
@@ -64,7 +73,7 @@ h1 {
     gap: 3rem;
 }
 
-.menulink > a {
+.menulink  a {
     font-weight: 600;
     font-size: 1.5rem;
     text-decoration: none;
@@ -185,12 +194,15 @@ h1 {
 }
 
 .highlights {
-    width: 750PX;
+    width: 90%;
+    max-width: 950px;
     height: 55rem;
     margin: 4rem auto;
     border-radius: 2rem;
     border: .1rem solid gray;
-    padding: 3rem 2rem;
+    padding: 5rem 7rem;
+    
+
 }
 
 .highlights > h1 {
@@ -224,11 +236,44 @@ p {
     }
   }
 
-  .cover1 {
-    position: relative;
-    left: -30%;
+  .manga {
+    width: 380px;
+    height: 170px;
+    display: flex;
+    background-color: rgba(134, 192, 240, 0.158);
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px black;
   }
 
-  .cover1:hover {
-    opacity: 0;
-  }
+ .mangcap {
+    width: 34%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .manga p {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3%;
+ }
+
+.caps {
+    display: flex;
+    margin: 5px auto;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #ed07b72d;
+    padding: 5px 15px;
+    border-radius: 10px;
+    color: aliceblue;
+    box-shadow: 1px 1px 1px white;
+    transition: .2s ;
+}
+
+.caps:hover {
+    background-color: #ed07b79d;
+    transform: scale(1.1);
+}
